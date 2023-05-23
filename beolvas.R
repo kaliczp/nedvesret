@@ -11,3 +11,6 @@ source("smartbe/smartbe.R")
 
 ## Az első fájl beolvasása
 nedvesret <- smartbe(paste0(ttmappanev, txtfiles[1]), channel = 1)
+for(ttfile in txtfiles[-1]) {
+    nedvesret <- rbind(nedvesret, smartbe(paste0(ttmappanev, ttfile), channel = 1))
+}
