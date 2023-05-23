@@ -8,3 +8,6 @@ txtfiles <- dir(ttmappanev, pattern = "TXT")
 ### Beolvasás
 ## submodule szkript behívása
 source("smartbe/smartbe.R")
+
+## Az első fájl beolvasása
+nedvesret <- smartbe(paste0(ttmappanev, txtfiles[1]), channel = 1)
