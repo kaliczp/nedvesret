@@ -5,3 +5,6 @@ ttev  <- 2022
 ttmappanev <- paste0("konvertalt", ttev, "/")
 txtfiles <- dir(ttmappanev, pattern = "TXT")
 
+### Beolvasás
+## submodule szkript behívása
+source("smartbe/smartbe.R")
